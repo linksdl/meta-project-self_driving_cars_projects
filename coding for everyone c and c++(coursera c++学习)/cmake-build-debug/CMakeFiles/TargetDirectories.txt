@@ -1,0 +1,3 @@
+/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-learning_mooc_courses/coursera/Coding for Everyone-C and C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-learning_mooc_courses/coursera/Coding for Everyone-C and C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-learning_mooc_courses/coursera/Coding for Everyone-C and C++/cmake-build-debug/CMakeFiles/Coding_for_Everyone_C_and_C__.dir

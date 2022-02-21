@@ -1,0 +1,1 @@
+The average value is: 11.750000 	 the max value is: 15.
