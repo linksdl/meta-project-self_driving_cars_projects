@@ -1,1 +1,0 @@
-jupyter notebook --port 3002 --ip=0.0.0.0 --allow-root
