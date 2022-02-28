@@ -27,6 +27,8 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Find the chessboard corners
 # Size patternsize(8,6); //interior number of corners
 # 方法说明：https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#cv2.findChessboardCorners
+nx = 8
+ny = 6
 ret, corners = cv2.findChessboardCorners(gray, (nx, ny), None)
 
 # If found the pattern, draw corners
