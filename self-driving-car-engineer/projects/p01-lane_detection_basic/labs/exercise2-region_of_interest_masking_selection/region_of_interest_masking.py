@@ -4,7 +4,7 @@
 @Time        : 2022/2/24 16:07
 @Author      : shengdl999links@gmail.com
 @ProjectName : self-driving-car-engineer
-@File        : region_mask.py
+@File        : region_of_interest_masking.py
 """
 
 import matplotlib.pyplot as plt
@@ -14,8 +14,7 @@ import numpy as np
 
 # Read in the image and print some stats
 image = mpimg.imread('test.jpeg')
-print('This image is: ', type(image),
-         'with dimensions:', image.shape)
+print('This image is: ', type(image), 'with dimensions:', image.shape)
 
 # Pull out the x and y sizes and make a copy of the image
 ysize = image.shape[0]
