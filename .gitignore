@@ -128,4 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /.idea/
-.tfrecord
+/*/.idea
+*.tfrecord
+/self-driving-car-engineer_udacity_v1/
+*.tar.gz
+*.bag
