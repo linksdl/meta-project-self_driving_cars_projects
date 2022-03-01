@@ -4,7 +4,7 @@
 @Time        : 2022/2/25 16:03
 @Author      : shengdl999links@gmail.com
 @ProjectName : self-driving-car-engineer
-@File        : color_and_gradient_1.py
+@File        : color_and_gradient_solution.py
 """
 
 import numpy as np
