@@ -1,12 +1,11 @@
 """
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-@Time        : 2022/2/25 15:47
+@Time        : 2022/2/28 22:23
 @Author      : shengdl999links@gmail.com
 @ProjectName : self-driving-car-engineer
 @File        : rgb_to_hls.py
 """
-
 
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
@@ -22,18 +21,19 @@ image = mpimg.imread('test6.jpg')
 def hls_select(img, thresh=(0, 255)):
     # 1) Convert to HLS color space
     hls = cv2.cvtColor(img, cv2.COLOR_RGB2HLS)
+
     # 2) Apply a threshold to the S channel
     s_channel = hls[:, :, 2]
+
     # 3) Return a binary image of threshold result
     binary_output = np.zeros_like(s_channel)
-    binary_output[(s_channel > thresh[0]) & (s_channel < thresh[1])] = 1
+    binary_output[(s_channel > thresh[0]) & (s_channel <= thresh[1])]  = 1
     # binary_output = np.copy(img)  # placeholder line
     return binary_output
 
 
-
-
 hls_binary = hls_select(image, thresh=(90, 255))
+
 # Plot the result
 f, (ax1, ax2) = plt.subplots(1, 2, figsize=(24, 9))
 f.tight_layout()
