@@ -133,3 +133,4 @@ dmypy.json
 /self-driving-car-engineer_udacity_v1/
 *.tar.gz
 *.bag
+/self-driving-car-engineer/.idea/
