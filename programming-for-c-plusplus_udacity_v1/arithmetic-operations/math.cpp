@@ -16,12 +16,12 @@ int main()
     float volCube, volSphere, Volcone = 0;
 
     volCube = std::pow(cubeSide, 3);
-    volSphere = (4/3) * M_PI * std::pow(sphereRadius, 3);
-    Volcone = M_PI * std::pow(coneRadius, 2) * (coneHeight/2);
+    volSphere = (4.0/3.0) * M_PI * std::pow(sphereRadius, 3);
+    Volcone = M_PI * std::pow(coneRadius, 2) * (coneHeight/3);
 
-    std::cout << "The Cube Volume is " << volCube << std::endl;
-    std::cout << "The Cube Volume is " << volCube << std::endl;
-    std::cout << "The Cube Volume is " << volCube << std::endl;
+    std::cout << "\n Volume of Cube is " << volCube << std::endl;
+    std::cout << "\n Volume of Sphere is " << volSphere << std::endl;
+    std::cout << "The Volume of Cone is " << Volcone << std::endl;
 
     return 0;
 }
