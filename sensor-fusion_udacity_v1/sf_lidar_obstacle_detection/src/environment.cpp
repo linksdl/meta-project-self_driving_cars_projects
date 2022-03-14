@@ -19,6 +19,7 @@ std::vector<Car> initHighway(bool  renderScene, pcl::visualization::PCLVisualize
     Car car2( Vect3(8,-4,0), Vect3(4,2,2), Color(0,0,1), "car2");	
     Car car3( Vect3(-12,4,0), Vect3(4,2,2), Color(0,0,1), "car3");
 
+  
     std::vector<Car> cars;
     cars.push_back(egoCar);
     cars.push_back(car1);
@@ -36,6 +37,7 @@ std::vector<Car> initHighway(bool  renderScene, pcl::visualization::PCLVisualize
 
     return cars;
 }
+
 
 // init the camera
 void initCamera(CameraAngle setAngle, pcl::visualization::PCLVisualizer::Ptr& viewer)
@@ -63,19 +65,25 @@ void initCamera(CameraAngle setAngle, pcl::visualization::PCLVisualizer::Ptr& vi
 }
 
 
-void simpleHighway(pcl::visualization::PCLVisualizer::Ptr& viewer)
+void simpleHighway(pcl::visualization::PCLVisualizer::Ptr& viewer, bool renderScene)
 {
     // ----------------------------------------------------
     // -----Open 3D viewer and display simple highway -----
     // ----------------------------------------------------
     
     // RENDER OPTIONS
-    bool renderScene = true;
+    // bool renderScene = true;
     std::vector<Car> cars = initHighway(renderScene, viewer);
     
     // TODO:: Create lidar sensor 
+    Lidar* lidar = new Lidar(cars, 0);
+    pcl::PointCloud<pcl::PointXYZ>::Ptr inputCloud = lidar->scan();
+    // renderRays(viewer, lidar->position, inputCloud);
+    renderPointCloud(viewer, inputCloud, "inputCloud");
 
     // TODO:: Create point processor
+   // ProcessPointClouds<pcl::PointXYZ> pointProcessor;
+
 }
 
 int main(int agrc, char** argv)
@@ -85,7 +93,8 @@ int main(int agrc, char** argv)
   pcl::visualization::PCLVisualizer::Ptr viewer( new pcl::visualization::PCLVisualizer ("3D Highway"));
   CameraAngle setAngle = XY;
   initCamera (setAngle, viewer);
-  simpleHighway(viewer);
+  bool renderScene = false;
+  simpleHighway(viewer, renderScene);
 
   while (!viewer->wasStopped() )
   {
