@@ -50,18 +50,19 @@ class ProcessPointClouds
             // segment the road plane
             std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT>::Ptr> SegmentPlane(typename pcl::PointCloud<PointT>::Ptr cloud, int maxIterations, float distanceThreshold);
 
+
             // cludstering
              std::vector<typename pcl::PointCloud<PointT>::Ptr> Clustering(typename pcl::PointCloud<PointT>::Ptr cloud, float clusterTolerance, int minSize, int maxSize);
 
             // load, save PCD files
             void savePcd(typename pcl::PointCloud<PointT>::Ptr cloud, std::string file);
-            typename pcl::PointCloud<PointT>::Ptr loadPcd(std::string, file);
+
+            typename pcl::PointCloud<PointT>::Ptr loadPcd(std::string file);
+
             std::vector<boost::filesystem::path> streamPcd(std::string dataPath);
 
             // Bounding box
             Box BoundingBox(typename pcl::PointCloud<PointT>::Ptr cluster);
+};
 
-}
-
-
-#endif
+#endif /* PROCESSPOINTCLOUDS_H_ */
