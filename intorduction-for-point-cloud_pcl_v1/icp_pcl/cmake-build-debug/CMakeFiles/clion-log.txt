@@ -1,0 +1,63 @@
+"/Users/shengdaolin_sh/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/shengdaolin_sh/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja /Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/intorduction-for-point-cloud-point_v1/icp_pcl
+-- Eigen found (include: /usr/local/include/eigen3, version: 3.4.0)
+-- Found Boost: /usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake (found suitable version "1.78.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- Found JsonCpp: /usr/local/lib/libjsoncpp.dylib (found suitable version "1.9.5", minimum required is "0.7.0")
+CMake Warning at /usr/local/lib/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:1243 (find_package):
+  By not providing "FindQt5.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt5", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5" (requested
+  version 5.15) with any of the following names:
+
+    Qt5Config.cmake
+    qt5-config.cmake
+
+  Add the installation prefix of "Qt5" to CMAKE_PREFIX_PATH or set "Qt5_DIR"
+  to a directory containing one of the above files.  If "Qt5" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/vtk-9.1/vtk-config.cmake:150 (include)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:270 (find_package)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:319 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:543 (find_external_library)
+  CMakeLists.txt:7 (find_package)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt5
+CMake Warning at /usr/local/share/pcl-1.12/PCLConfig.cmake:270 (find_package):
+  Found package configuration file:
+
+    /usr/local/lib/cmake/vtk-9.1/vtk-config.cmake
+
+  but it set VTK_FOUND to FALSE so package "VTK" is considered to be NOT
+  FOUND.  Reason given by package:
+
+  Could not find the VTK package with the following required components:
+  GUISupportQt.
+
+Call Stack (most recent call first):
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:319 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:543 (find_external_library)
+  CMakeLists.txt:7 (find_package)
+
+
+** WARNING ** io features related to vtk will be disabled
+-- Eigen found (include: /usr/local/include/eigen3, version: 3.4.0)
+-- looking for PCL_COMMON
+-- looking for PCL_OCTREE
+-- looking for PCL_IO
+-- Found PCL: pcl_common;pcl_octree;pcl_io;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization (Required is at least version "1.12.0")
+CMake Error at CMakeLists.txt:13 (add_executable):
+  add_executable cannot create target "icp_pcl" because another target with
+  the same name already exists.  The existing target is an executable created
+  in source directory
+  "/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/intorduction-for-point-cloud-point_v1/icp_pcl".
+  See documentation for policy CMP0002 for more details.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/intorduction-for-point-cloud-point_v1/icp_pcl/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/intorduction-for-point-cloud-point_v1/icp_pcl/cmake-build-debug/CMakeFiles/CMakeError.log".

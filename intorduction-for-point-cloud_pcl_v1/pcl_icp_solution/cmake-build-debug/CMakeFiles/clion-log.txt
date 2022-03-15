@@ -1,0 +1,255 @@
+"/Users/shengdaolin_sh/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/shengdaolin_sh/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja /Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/intorduction-for-point-cloud-point_v1/pcl_icp_solution
+-- The C compiler identification is AppleClang 13.0.0.13000029
+-- The CXX compiler identification is AppleClang 13.0.0.13000029
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.4.0
+-- Found Eigen: /usr/local/include/eigen3 (Required is at least version "3.1")
+-- Eigen found (include: /usr/local/include/eigen3, version: 3.4.0)
+-- Found Boost: /usr/local/include (found suitable version "1.76.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams regex
+-- Checking for module 'flann'
+--   Found flann, version 1.9.1
+-- Found FLANN: /usr/local/lib/libflann_cpp_s.a
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+CMake Warning at /usr/local/lib/cmake/vtk-9.0/VTK-vtk-module-find-packages.cmake:209 (find_package):
+  By not providing "FindQt5.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt5", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5" (requested
+  version 5.15) with any of the following names:
+
+    Qt5Config.cmake
+    qt5-config.cmake
+
+  Add the installation prefix of "Qt5" to CMAKE_PREFIX_PATH or set "Qt5_DIR"
+  to a directory containing one of the above files.  If "Qt5" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/vtk-9.0/vtk-config.cmake:131 (include)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:276 (find_package)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:325 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:536 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt5
+-- Found GLEW: /usr/local/lib/libGLEW.dylib
+-- Found OpenGL: /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework  found components: OpenGL
+-- Found JsonCpp: /usr/local/lib/libjsoncpp.dylib (found suitable version "1.9.3", minimum required is "0.7.0")
+-- Found ZLIB: /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/lib/libz.tbd (found version "1.2.11")
+-- Found PNG: /usr/local/lib/libpng.dylib (found version "1.4.12")
+CMake Warning at /usr/local/lib/cmake/vtk-9.0/VTK-vtk-module-find-packages.cmake:1149 (find_package):
+  By not providing "FindQt5.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt5", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5" (requested
+  version 5.15) with any of the following names:
+
+    Qt5Config.cmake
+    qt5-config.cmake
+
+  Add the installation prefix of "Qt5" to CMAKE_PREFIX_PATH or set "Qt5_DIR"
+  to a directory containing one of the above files.  If "Qt5" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/vtk-9.0/vtk-config.cmake:131 (include)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:276 (find_package)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:325 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:536 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt5
+-- Found EXPAT: /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd (found version "2.2.5")
+-- Found double-conversion: /usr/local/lib/libdouble-conversion.dylib
+-- Found LZ4: /usr/local/lib/liblz4.dylib (found version "1.9.3")
+-- Found LZMA: /usr/local/lib/liblzma.dylib (found version "5.2.5")
+-- Found utf8cpp: /usr/local/include/utf8cpp
+-- Found Eigen3: /usr/local/include/eigen3 (found version "3.4.0")
+-- Found JPEG: /usr/local/lib/libjpeg.dylib (found version "80")
+-- Found TIFF: /usr/local/lib/libtiff.dylib (found version "4.0.9")
+CMake Warning at /usr/local/share/pcl-1.12/PCLConfig.cmake:276 (find_package):
+  Found package configuration file:
+
+    /usr/local/lib/cmake/vtk-9.0/vtk-config.cmake
+
+  but it set VTK_FOUND to FALSE so package "VTK" is considered to be NOT
+  FOUND.  Reason given by package:
+
+  Could not find the VTK package with the following required components:
+  GUISupportQt, RenderingQt.
+
+Call Stack (most recent call first):
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:325 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:536 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+** WARNING ** 2d features related to vtk will be disabled
+** WARNING ** io features related to pcap will be disabled
+CMake Warning at /usr/local/lib/cmake/vtk-9.0/VTK-vtk-module-find-packages.cmake:209 (find_package):
+  By not providing "FindQt5.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt5", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5" (requested
+  version 5.15) with any of the following names:
+
+    Qt5Config.cmake
+    qt5-config.cmake
+
+  Add the installation prefix of "Qt5" to CMAKE_PREFIX_PATH or set "Qt5_DIR"
+  to a directory containing one of the above files.  If "Qt5" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/vtk-9.0/vtk-config.cmake:131 (include)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:276 (find_package)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:325 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:536 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt5
+CMake Warning at /usr/local/lib/cmake/vtk-9.0/VTK-vtk-module-find-packages.cmake:1149 (find_package):
+  By not providing "FindQt5.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt5", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5" (requested
+  version 5.15) with any of the following names:
+
+    Qt5Config.cmake
+    qt5-config.cmake
+
+  Add the installation prefix of "Qt5" to CMAKE_PREFIX_PATH or set "Qt5_DIR"
+  to a directory containing one of the above files.  If "Qt5" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/vtk-9.0/vtk-config.cmake:131 (include)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:276 (find_package)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:325 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:536 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt5
+CMake Warning at /usr/local/share/pcl-1.12/PCLConfig.cmake:276 (find_package):
+  Found package configuration file:
+
+    /usr/local/lib/cmake/vtk-9.0/vtk-config.cmake
+
+  but it set VTK_FOUND to FALSE so package "VTK" is considered to be NOT
+  FOUND.  Reason given by package:
+
+  Could not find the VTK package with the following required components:
+  GUISupportQt, RenderingQt.
+
+Call Stack (most recent call first):
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:325 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:536 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+** WARNING ** io features related to vtk will be disabled
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.24
+-- Found libusb: /usr/local/lib/libusb-1.0.dylib
+CMake Warning at /usr/local/lib/cmake/vtk-9.0/VTK-vtk-module-find-packages.cmake:209 (find_package):
+  By not providing "FindQt5.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt5", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5" (requested
+  version 5.15) with any of the following names:
+
+    Qt5Config.cmake
+    qt5-config.cmake
+
+  Add the installation prefix of "Qt5" to CMAKE_PREFIX_PATH or set "Qt5_DIR"
+  to a directory containing one of the above files.  If "Qt5" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/vtk-9.0/vtk-config.cmake:131 (include)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:276 (find_package)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:325 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:539 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt5
+CMake Warning at /usr/local/lib/cmake/vtk-9.0/VTK-vtk-module-find-packages.cmake:1149 (find_package):
+  By not providing "FindQt5.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt5", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5" (requested
+  version 5.15) with any of the following names:
+
+    Qt5Config.cmake
+    qt5-config.cmake
+
+  Add the installation prefix of "Qt5" to CMAKE_PREFIX_PATH or set "Qt5_DIR"
+  to a directory containing one of the above files.  If "Qt5" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/vtk-9.0/vtk-config.cmake:131 (include)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:276 (find_package)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:325 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:539 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt5
+CMake Warning at /usr/local/share/pcl-1.12/PCLConfig.cmake:276 (find_package):
+  Found package configuration file:
+
+    /usr/local/lib/cmake/vtk-9.0/vtk-config.cmake
+
+  but it set VTK_FOUND to FALSE so package "VTK" is considered to be NOT
+  FOUND.  Reason given by package:
+
+  Could not find the VTK package with the following required components:
+  GUISupportQt, RenderingQt.
+
+Call Stack (most recent call first):
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:325 (find_VTK)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:539 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+CMake Error at /usr/local/share/pcl-1.12/PCLConfig.cmake:63 (message):
+  visualization is required but vtk was not found
+Call Stack (most recent call first):
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:356 (pcl_report_not_found)
+  /usr/local/share/pcl-1.12/PCLConfig.cmake:539 (find_external_library)
+  CMakeLists.txt:8 (find_package)
+
+
+CMake Error in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.21)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/intorduction-for-point-cloud-point_v1/pcl_icp_solution/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/intorduction-for-point-cloud-point_v1/pcl_icp_solution/cmake-build-debug/CMakeFiles/CMakeError.log".
