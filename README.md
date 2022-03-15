@@ -3,6 +3,11 @@
 
 ### 1, Udacity for Lidar obstacle detection
 **概述：** 激光雷达障碍物识别，在本项目中处理原始激光雷达数据，通过对3D点云数据进行过滤，分割和聚类从而检测道路行驶中的车辆，行人等障碍物；使用平面模型拟合实现RANSA算法以分割点云。而且利用KD-Tree算法进行欧氏聚类，对车辆和障碍物进行聚类和区分。
+**步骤：**
+- 1，将过滤后的云分割成两部分，道路和障碍物；
+- 2，对障碍物云进行聚类；
+- 3，找到集群的边界框；
+- 
 
 ![image](sensor-fusion_udacity_v1/sf_lidar_obstacle_detection/out/obstacle-detection-fps.gif)
 
@@ -24,5 +29,8 @@
 - Bounding Box
 - [BOXQ, PCA](https://codextechnicanum.blogspot.com/2015/04/find-minimum-oriented-bounding-box-of.html)
 - PCL 过滤，分割，聚类
+- PCL for Voxel Grid Filtering and region of interest(ROI).
+- Open3D 过滤，分割，聚类
 - Eigen Library
 - C++ 编程， CMake
+- Tracking, Create associations between detections in frames and use that to track objects.
