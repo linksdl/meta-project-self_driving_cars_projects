@@ -65,7 +65,7 @@ void initCamera(CameraAngle setAngle, pcl::visualization::PCLVisualizer::Ptr& vi
 }
 
 
-void simpleHighway(pcl::visualization::PCLVisualizer::Ptr& viewer, bool renderScene)
+void simpleHighway(pcl::visualization::PCLVisualizer::Ptr& viewer, bool renderScene, bool render_obst, bool  render_plane, bool render_box)
 {
     // ----------------------------------------------------
     // -----Open 3D viewer and display simple highway -----
@@ -84,8 +84,8 @@ void simpleHighway(pcl::visualization::PCLVisualizer::Ptr& viewer, bool renderSc
     // TODO:: Create point processor
     ProcessPointClouds<pcl::PointXYZ> pointProcessor; 
     std::pair<pcl::PointCloud<pcl::PointXYZ>::Ptr, pcl::PointCloud<pcl::PointXYZ>::Ptr> segmentCloud = pointProcessor.SegmentPlane(inputCloud, 100, 0.2);
-    renderPointCloud(viewer, segmentCloud.first, "obstCloud", Color(1,0,0));
-    renderPointCloud(viewer, segmentCloud.second, "planeCloud", Color(0,1,0));
+    if(render_obst) renderPointCloud(viewer, segmentCloud.first, "obstCloud", Color(1,0,0));
+    if(render_plane) renderPointCloud(viewer, segmentCloud.second, "planeCloud", Color(0,1,0));
 
     std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> cloudClusters = pointProcessor.Clustering(segmentCloud.first,  1.0,  3, 30);
     std::cout<<"num of cluster: "<<cloudClusters.size()<<endl;
@@ -100,12 +100,15 @@ void simpleHighway(pcl::visualization::PCLVisualizer::Ptr& viewer, bool renderSc
       renderPointCloud(viewer, cluster, "obcluster"+std::to_string(clusterId), colors[clusterId % colors.size()]);
       //renderPointCloud(viewer, cluster, "obstcloud"+std::to_string(clusterId), colors[clusterId]);
 
-      //Box box = pointProcessor.BoundingBox(cluster);
-     //  renderBox(viewer, box, clusterId);
-
+    if(render_box)
+    {
+       Box box = pointProcessor.BoundingBox(cluster);
+       renderBox(viewer, box, clusterId);
+    }
       ++ clusterId;
     }
 
+  renderPointCloud(viewer, segmentCloud.second, "planeCloud", Color(0,1,0));
 }
 
 int main(int agrc, char** argv)
@@ -116,7 +119,10 @@ int main(int agrc, char** argv)
   CameraAngle setAngle = XY;
   initCamera (setAngle, viewer);
   bool renderScene = false;
-  simpleHighway(viewer, renderScene);
+  bool render_obst = true;
+  bool render_plane = true;
+  bool render_box = true;
+  simpleHighway(viewer, renderScene, render_obst, render_plane, render_box);
 
   while (!viewer->wasStopped() )
   {
