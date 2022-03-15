@@ -33,4 +33,4 @@
 - Open3D 过滤，分割，聚类
 - Eigen Library
 - C++ 编程， CMake
-- Tracking
+- Tracking, Create associations between detections in frames and use that to track objects.
