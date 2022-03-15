@@ -139,3 +139,4 @@ dmypy.json
 *.cmake
 /self-driving-car-engineer_udacity_v2/
 /programming-for-c-plusplus_udacity_v2/
+/*/.idea/
