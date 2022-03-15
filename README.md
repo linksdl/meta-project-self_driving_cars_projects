@@ -6,9 +6,8 @@
 **步骤：**
 - 1，将过滤后的云分割成两部分，道路和障碍物；
 - 2，对障碍物云进行聚类；
-- 3，找到集群的边界框；
-- 
-
+- 3，找到集群的边界框.
+![image](sensor-fusion_udacity_v1/sf_lidar_obstacle_detection/images/highway11.png)
 ![image](sensor-fusion_udacity_v1/sf_lidar_obstacle_detection/out/obstacle-detection-fps.gif)
 
 **关键技术：**
