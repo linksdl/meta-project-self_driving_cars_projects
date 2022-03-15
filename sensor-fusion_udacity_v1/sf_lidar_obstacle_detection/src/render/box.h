@@ -3,6 +3,7 @@
 
 #include <Eigen/Geometry>
 
+// https://codextechnicanum.blogspot.com/2015/04/find-minimum-oriented-bounding-box-of.html
 struct  BoxQ
 {
     /* data */
