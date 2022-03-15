@@ -33,3 +33,36 @@
 - Eigen Library
 - C++ 编程， CMake
 - Tracking, Create associations between detections in frames and use that to track objects.
+
+
+### 2, Udacity for Radar Target detection and Tracking
+**概述：** 在本项目中,通过分析雷达信号以检测和跟踪目标。通过校正计算 速度和方向用于径向速度扭曲、噪声和遮挡，应用阈值来识别和 消除错误，过滤数据以跟踪随时间移动的对象。
+**步骤：**
+- 毫米波雷达参数设置；
+- FMCW 设置；
+- 移动目标设置和生成；
+- 信号处理，距离/多普勒 快速傅立叶变换处理；
+- CA-CFAR 检测。
+![iamge](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image11.png)
+![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image10.png)
+![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image26.png)
+**关键技术：**
+![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image21.png)
+![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image16.png)
+- 毫米波Radar传感器，工作原理，应用。
+  > 雷达自1930 年代以来一直在使用，当时它们主要被军队用于探测飞机，但从那时起，雷达技术已经取得了长足的进步，如今它们越来越多地用作高级驾驶员辅助系统 (ADAS) 的汽车雷达传感器。下图显示了雷达传感器如何与自动驾驶汽车中的全套其他传感器一起使用：
+  > 射频技术和数字信号处理的进步使得以低成本和更小尺寸设计高效雷达成为可能。该雷达能够以准确的速度和空间信息远距离确定目标，使其成为自动驾驶应用的重要传感器。此外，它在黑暗和恶劣天气（雨、雾）条件下感知物体的能力也有助于它覆盖激光雷达或摄像头可能出现故障的领域。
+  > 如果遇到障碍物，电磁波就会被反射。如果这些反射波在它们的起源位置再次被接收到，那么这意味着在传播方向上有障碍物。用于雷达的电磁能频率不受黑暗影响，也能穿透雾和云。这允许雷达系统确定由于距离、黑暗或天气原因而肉眼看不见的道路目标的位置。 现代雷达可以从目标的回波信号中提取比其范围更多的信息。
+
+- 信号属性
+- FMCW 波形
+  - 调频连续波(FMCW) 是频率随时间增加/减少的信号。
+  - ![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image5.png)
+  - ![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image111.png)
+- 多普勒距离估计 
+- FFT(Fast Fourier Transform),快速傅立叶变换，2D FFT
+- Clutter（杂波）
+- CFAR(CA-CFAR, OS CFAR), 2D CFAR 
+- AoA(Angle of Arrival)
+- Matlab
+- Kalman Filter, Kalman Filter Tracking
