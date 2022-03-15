@@ -44,8 +44,8 @@
 - 信号处理，距离/多普勒 快速傅立叶变换处理；
 - CA-CFAR 检测。
 ![iamge](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image11.png)
-![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image10.png)
-![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image26.png)
+<!-- ![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image10.png) -->
+<!-- ![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image26.png) -->
 **关键技术：**
 ![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image21.png)
 ![image](sensor-fusion_udacity_v1/sf_radar_target_detection/images/image16.png)
