@@ -127,18 +127,19 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
 /.idea/
 /*/.idea
+*/.idea
+/*/.cmake
+*.cmake
+*/cmake-build-debug
+/*/cmake-build-debug
+
 *.tfrecord
 *.tar.gz
 *.bag
-*/.idea
-/*/.vscode
-/*/.idea/
-*.cmake
 
-/self-driving-car-engineer_udacity_v1/
-/self-driving-car-engineer_udacity_v2/
-/programming-for-c-plusplus_udacity_v2/
-/sensor-fusion_udacity_v2/
-/theory-and-practie-of-the-laser-slam/
+/*/.vscode
+
+
