@@ -1,10 +1,10 @@
-/*Goal: practice getting string inputs and 
+/*Goal: practice getting string inputs and
  **converting them to numeric variables using
  **stringstream.
  **
- **Prompt the user for the length of a room. 
+ **Prompt the user for the length of a room.
  **Then prompt for the width of the room.
- **Print out the area of the room. 
+ **Print out the area of the room.
  */
 
 #include <iostream>

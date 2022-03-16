@@ -133,8 +133,8 @@ dmypy.json
 */.idea
 /*/.cmake
 *.cmake
-*/cmake-build-debug
-/*/cmake-build-debug
+#*/cmake-build-debug
+#/*/cmake-build-debug
 
 *.tfrecord
 *.tar.gz
@@ -143,3 +143,4 @@ dmypy.json
 /*/.vscode
 
 
+/udacity-program_c_plusplus_programming_v2/
