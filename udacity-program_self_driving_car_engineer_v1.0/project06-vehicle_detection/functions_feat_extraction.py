@@ -5,7 +5,7 @@ from skimage.feature import hog
 
 def get_hog_features(img, orient, pix_per_cell, cell_per_block, verbose=False, feature_vec=True):
     """
-    Return hog features for a given image patch `img`.
+    Return hog features for a given image patch `images`.
     If `verbose==True`, a visualization of the features is also returned.
     """
     if verbose:
@@ -35,7 +35,7 @@ def bin_spatial(img, size=(32, 32)):
 
 def color_hist(img, nbins=32, bins_range=(0, 256)):
     """
-    Compute the color histogram features of a given image `img`.
+    Compute the color histogram features of a given image `images`.
     Histogram is computed for each channel separately: then histograms are \
     concatenated and resulting feature vector is returned.
     """
@@ -297,7 +297,7 @@ if __name__ == '__main__':
 
     get_hog_features(img_gray, orient, pix_per_cell, cell_per_block, verbose=False, feature_vec=True)
 
-    #out_img = find_cars(img, ystart, ystop, scale, svc, X_scaler, orient, pix_per_cell, cell_per_block, spatial_size, hist_bins)
+    #out_img = find_cars(images, ystart, ystop, scale, svc, X_scaler, orient, pix_per_cell, cell_per_block, spatial_size, hist_bins)
 
 
 
