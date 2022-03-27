@@ -133,9 +133,7 @@ dmypy.json
 */.idea
 /*/.cmake
 *.cmake
-#*/cmake-build-debug
-#/*/cmake-build-debug
-
+*/cmake-build-debug
 *.tfrecord
 *.tar.gz
 *.bag
@@ -143,16 +141,17 @@ dmypy.json
 *.cfg
 *.mp4
 *.pickle
+*.pcd
+*.weights
+*.bin
 
 /*/.vscode
+/*/Eigen/*
 
-udacity-program_sensor_fusion_v1/sf_kalman_filter_c++/kf-2d
+
 /udacity-program_c_plusplus_programming_v1.0_codes/
 /udacity-program_self_driving_car_engineer_v1.0_codes/
 /udacity-program_self_driving_car_engineer_v1.0_source/
-/*/Eigen/*
-/udacity-program_sensor_fusion_v1/project_extended_kalman_filter/src/Eigen/
-/udacity-program_sensor_fusion_v1/sf_kalman_filter_c++/Eigen/
 /udacity-program_self_driving_car_engineer_v2.0_codes/
 /udacity-program_self_driving_car_engineer_v2.0_source/
 /udacity-program_self_driving_car_engineer_v2.0/module03-sensor fusion/Project01-Fusion-Sensor/results/
