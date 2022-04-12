@@ -7,8 +7,8 @@
 - 1，将过滤后的云分割成两部分，道路和障碍物；
 - 2，对障碍物云进行聚类；
 - 3，找到集群的边界框.
-![image](udacity-program_sensor_fusion_v1/project01-lidar_obstacle_detection/images/highway11.png)
-![image](udacity-program_sensor_fusion_v1/project01-lidar_obstacle_detection/out/obstacle-detection-fps.gif)
+![image](udacity-program_sensor_fusion_v1.0/project01-lidar_obstacle_detection/images/highway11.png)
+![image](udacity-program_sensor_fusion_v1.0/project01-lidar_obstacle_detection/out/obstacle-detection-fps.gif)
 
 **关键技术：**
 - Lidar传感器，工作原理，应用。
@@ -43,12 +43,12 @@
 - 移动目标设置和生成；
 - 信号处理，距离/多普勒 快速傅立叶变换处理；
 - CA-CFAR 检测。
-![iamge](udacity-program_sensor_fusion_v1/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image11.png)
+![iamge](udacity-program_sensor_fusion_v1.0/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image11.png)
 <!-- ![image](udacity-program_sensor_fusion_v1/sf_radar_target_detection/images/image10.png) -->
 <!-- ![image](udacity-program_sensor_fusion_v1/sf_radar_target_detection/images/image26.png) -->
 **关键技术：**
-![image](udacity-program_sensor_fusion_v1/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image21.png)
-![image](udacity-program_sensor_fusion_v1/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image16.png)
+![image](udacity-program_sensor_fusion_v1.0/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image21.png)
+![image](udacity-program_sensor_fusion_v1.0/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image16.png)
 - 毫米波Radar传感器，工作原理，应用。
   > 雷达自1930 年代以来一直在使用，当时它们主要被军队用于探测飞机，但从那时起，雷达技术已经取得了长足的进步，如今它们越来越多地用作高级驾驶员辅助系统 (ADAS) 的汽车雷达传感器。下图显示了雷达传感器如何与自动驾驶汽车中的全套其他传感器一起使用：
   > 射频技术和数字信号处理的进步使得以低成本和更小尺寸设计高效雷达成为可能。该雷达能够以准确的速度和空间信息远距离确定目标，使其成为自动驾驶应用的重要传感器。此外，它在黑暗和恶劣天气（雨、雾）条件下感知物体的能力也有助于它覆盖激光雷达或摄像头可能出现故障的领域。
@@ -57,8 +57,8 @@
 - 信号属性
 - FMCW 波形
   - 调频连续波(FMCW) 是频率随时间增加/减少的信号。
-  - ![image](udacity-program_sensor_fusion_v1/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image5.png)
-  - ![image](udacity-program_sensor_fusion_v1/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image111.png)
+  - ![image](udacity-program_sensor_fusion_v1.0/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image5.png)
+  - ![image](udacity-program_sensor_fusion_v1.0/part03-radar/module01-lessons/lesson06-radar target generation and detection/images/image111.png)
 - 多普勒距离估计 
 - FFT(Fast Fourier Transform),快速傅立叶变换，2D FFT
 - Clutter（杂波）
