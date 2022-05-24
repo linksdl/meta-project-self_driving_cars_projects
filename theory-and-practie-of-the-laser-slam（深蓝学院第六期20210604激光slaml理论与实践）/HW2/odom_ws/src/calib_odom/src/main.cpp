@@ -394,7 +394,7 @@ void Scan2::SetPIICPParams()
     //用最近的10个点来估计方向
     m_PIICPParams.orientation_neighbourhood = 10;
 
-    //设置使用PI-ICP
+    //设置使用PI-ICP(Iterative closest point)
     m_PIICPParams.use_point_to_line_distance = 1;
 
     //不进行alpha_test
@@ -495,11 +495,11 @@ Eigen::Vector3d  Scan2::PIICPBetweenTwoFrames(LDP& currentLDPScan,
 //        std::cout <<"Corr:"<<m_OutputResult.nvalid<<std::endl;
 //        std::cout <<"Erro:"<<m_OutputResult.error<<std::endl;
 
-//        std::cout <<"PI ICP GOOD"<<std::endl;
+//        std::cout <<"PI ICP(Iterative closest point) GOOD"<<std::endl;
     }
     else
     {
-        std::cout <<"PI ICP Failed!!!!!!!"<<std::endl;
+        std::cout <<"PI ICP(Iterative closest point) Failed!!!!!!!"<<std::endl;
         rPose = tmprPose;
     }
 
