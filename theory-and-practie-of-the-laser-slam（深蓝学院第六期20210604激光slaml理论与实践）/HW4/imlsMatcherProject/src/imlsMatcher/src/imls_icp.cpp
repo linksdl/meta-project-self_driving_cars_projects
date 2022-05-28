@@ -531,7 +531,7 @@ bool IMLSICPMatcher::Match(Eigen::Matrix3d& finalResult,
         if(in_cloud.size() < 5 || ref_cloud.size() < 5)
         {
             std::cout <<"Not Enough Correspondence:"<<in_cloud.size()<<","<<ref_cloud.size()<<std::endl;
-            std::cout <<"ICP Iterations Failed!!"<<std::endl;
+            std::cout <<"ICP(Iterative closest point) Iterations Failed!!"<<std::endl;
             return false;
         }
 
@@ -544,7 +544,7 @@ bool IMLSICPMatcher::Match(Eigen::Matrix3d& finalResult,
 
         if(flag == false)
         {
-            std::cout <<"ICP Iterations Failed!!!!"<<std::endl;
+            std::cout <<"ICP(Iterative closest point) Iterations Failed!!!!"<<std::endl;
             return false;
         }
 
