@@ -18,3 +18,8 @@
 - 激光雷达运动畸变，一帧数据是过去的一段时间而非某个时刻的数据
 - 运动补偿，把过去一段时间统一到一个时间点上
 - 位姿 
+
+#### LeGo-LOAM
+- Levenberg-Marquardt optimization LM 优化
+- Key Frame 关键帧
+- 
