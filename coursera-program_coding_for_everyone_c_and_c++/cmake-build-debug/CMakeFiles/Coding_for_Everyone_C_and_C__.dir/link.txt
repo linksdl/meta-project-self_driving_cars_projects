@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Coding_for_Everyone_C_and_C__.dir/course3-C++_For_C_Programmers_Part_A/week5/quiz1.cpp.o -o Coding_for_Everyone_C_and_C__ 

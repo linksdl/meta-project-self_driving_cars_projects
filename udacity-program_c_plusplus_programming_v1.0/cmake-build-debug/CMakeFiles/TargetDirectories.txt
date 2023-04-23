@@ -1,3 +1,0 @@
-/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/programming-for-c-plusplus_udacity_v1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/programming-for-c-plusplus_udacity_v1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/shengdaolin_sh/dir_developer/workspaces/pycharm/meta-project-self_driving_cars_projects/programming-for-c-plusplus_udacity_v1/cmake-build-debug/CMakeFiles/programming_for_c_plusplus_udacity_v1.dir
